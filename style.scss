@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #9EBBBD;
+}
+main {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+}
+header {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #3a6d70;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__header {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+
+    &__text-box {
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 3px solid black;
+        &:focus-within {
+            border: 3px solid rgb(85, 204, 85);
+        }
+        input {
+            text-align: end;
+            color: white;
+            background: black;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            width: auto;
+            font-size: 1.5em;
+        }
+        
+    }
+
+    &__tip {
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 12vw 12vw 12vw;
+            gap: 10px;
+
+            p {
+                color: white;
+                padding: 10px 25px;
+                border-radius: 5px;
+                text-align: center;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                color: white;
+                border-radius: 5px;
+                border: 3px solid black;
+                &:focus-within {
+                    border: 3px solid rgb(85, 204, 85);
+                }
+            }
+            div input {
+                color: white;
+                background: rgba(0, 0, 0, 0);
+                border-radius: 5px;
+                width: 10vw;
+                outline: none;
+                box-shadow: none;
+                border: none;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 1em;
+            }
+            &-item {
+                background: black;
+                cursor: pointer;
+                font-size: 1.5em;
+                &--active {
+                    background: rgb(72, 95, 77);
+                }
+            }
+        }
+    }
+}
+
+
+.output {
+    color: white;
+    background-color: #3a6d70;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    &__values {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        &-tip {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            align-items: center;
+        }
+        &-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__reset {
+        background: white;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

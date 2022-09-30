@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <header>
+    spli<br>tter
+  </header>
+
+
+  <main>
+    <section class="input">
+      <div class="input__bill">
+        <p class="input__header">Bill</p>
+        <div class="input__text-box">
+          <div class="input__text-box-dollar"><img src="images/icon-dollar.svg" alt=""></div>
+          <input type="text" name="" id="input__bill-input" placeholder="0.00">
+        </div>
+      </div>
+      <div class="input__tip">
+        <p class="input__header">Select Tip %</p>
+        <div class="input__tip-grid">
+          <p class="input__tip-grid-item input__tip-grid-item--active" onclick="handleActiveTip(0)">5%</p>
+          <p class="input__tip-grid-item" onclick="handleActiveTip(1)">10%</p>
+          <p class="input__tip-grid-item" onclick="handleActiveTip(2)">15%</p>
+          <p class="input__tip-grid-item" onclick="handleActiveTip(3)">25%</p>
+          <p class="input__tip-grid-item" onclick="handleActiveTip(4)">50%</p>
+          <div class="input__tip-grid-item" onclick="handleActiveTip(5)">
+            <input type="text" name="" id="input__tip-input" placeholder="custom">
+            <span>%</span>
+          </div>
+        </div>
+      </div>
+      <div class="input__ppl">
+        <p class="input__header">Number of People</p>
+        <div class="input__text-box">
+          <div class="input__text-box-ppl"><img src="images/icon-person.svg" alt=""></div>
+          <input type="text" name="" id="input__ppl-input" placeholder="0">
+        </div>`
+      </div>
+    </section>
+    <section class="output">
+      <div class="output__values">
+        <div class="output__values-tip">
+          <p>Tip Amount<br><span>/ person</span></p>
+          <h1>$<span id="tip-output">0.00</span></h1>
+        </div>
+        <div class="output__values-total">
+          <p>Total<br><span>/ person</span></p>
+          <h1>$<span id="total-output">0.00</span></h1>
+        </div>
+      </div>
+      <div class="output__reset" onclick="handleReset()">reset</div>
+    </section>
+  </main>
+
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
