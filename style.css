@@ -139,4 +139,20 @@ header {
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  body {
+    height: unset;
+    padding: 5vh 0;
+  }
+  main {
+    flex-direction: column;
+  }
+  .input__tip-grid {
+    grid-template-columns: auto auto auto;
+  }
+  .input__tip-grid-item {
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
